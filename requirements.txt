@@ -1,0 +1,13 @@
+langchain
+langgraph
+langchain_community
+qdrant-client
+torch
+torchvision
+pillow
+sentence-transformers
+langchain_huggingface
+python-dotenv
+langchain_openai
+psycopg
+streamlit
