@@ -10,4 +10,5 @@ langchain_huggingface
 python-dotenv
 langchain_openai
 psycopg
+pytesseract
 streamlit
