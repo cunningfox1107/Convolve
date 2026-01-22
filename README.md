@@ -1,5 +1,5 @@
 
-# Your medical assistant 
+# MediQ:Your medical assistant 
 This study introduces the design and implementation of a Healthcare Memory
 Assistant, an intelligent conversational system developed with LangGraph,
 Qdrant, and Large Language Models (LLMs). The system ingests multimodal
