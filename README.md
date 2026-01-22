@@ -8,6 +8,43 @@ and generates safe, non-diagnostic summaries tailored to user queries.
 The assistant is architected with memory persistence, session continuity,
 multi-threaded conversations, and explainable summarization as first-class
 design goals.<br><br>
+
+## Instructions to setup the system
+#### Setup Instructions
+<br>
+This project requires Python, Docker, PostgreSQL, Qdrant, and Tesseract OCR.<br><br>
+pip install all the packages in the **requirements.txt** provided with this repository<br><br>
+
+Download Tesseract from: https://github.com/UB-Mannheim/tesseract/wiki<br><br>
+
+Download PostgreSQL for Windows and Create Database
+**CREATE DATABASE langgraph;** in PostgreSQL
+<br>
+Connection String Used<br>
+**postgresql://postgres:password@localhost:5432/langgraph** where you have to provide your PostgreSQL password in place of password placeholder.
+<br><br>
+Download Docker for Windows and make sure that docker is running <br><br>
+Now run
+**docker run -d \
+  --name qdrant \
+  -p 6333:6333 \
+  -p 6334:6334 \
+  -v qdrant_data:/qdrant/storage \
+  qdrant/qdrant** in powershell
+
+### System Requirements
+
+OS: Windows / Linux / macOS
+<br><br>
+Python: 3.10+
+<br><br>
+Docker Desktop
+<br><br>
+PostgreSQL 14+
+<br><br>
+Git
+<br><br>
+
 ## High-Level System Architecture<br><br>
 
 <img width="126" height="928" alt="langgraph_workflow" src="https://github.com/user-attachments/assets/d136b73c-dda5-4546-ac7a-943c7bf44b65" />
